@@ -274,6 +274,13 @@ public class Display extends JPanel implements KeyListener{
 					collect4 +=1;
 				}
 			}
+			if(key.getKeyCode() == KeyEvent.VK_ENTER){
+				playerX = 25;
+				playerY = 75;
+				trailX.clear();
+				trailY.clear();
+				fetchMaze();
+			}
 			requestFocusInWindow();
 			repaint();
 		}
